@@ -24,6 +24,18 @@
         }
         return max;
     }
+    function dispArr(arr) {
+        for (var i = 0; i < arr.length; ++i) {
+            document.write(arr[i] + " ");
+            if(i%10==9){
+                document.write("<br>");
+            }
+        }
+        if(i%10!=0){
+            document.write("<br>");
+        }
+    }
+
     let mang=[9,3,4,6,2,10];
     console.log(Min(mang));
     //cach2;su dung ham findMin
@@ -33,9 +45,10 @@
     }
     let min=Min(so);
     let max=Max(so);
-
-    console.log("min=== " +min);
-    console.log("max=== " +max);
+    dispArr(so);
+    document.write("<br/>");
+    document.write("min=== " +min+"<br>");
+    document.write("max=== " +max);
 
 </script>
 </body>
