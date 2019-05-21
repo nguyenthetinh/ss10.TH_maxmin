@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //cach1
+    function Min(mang) {
+        let min=mang[0];
+        for (i=1 ; i<=mang.length ; i++){
+            if (min>mang[i]){
+                min=mang[i];
+            }
+        }
+        return min;
+    }function Max(mang) {
+        let max=mang[0];
+        for (i=1 ; i<=mang.length ; i++){
+            if (max<mang[i]){
+                max=mang[i];
+            }
+        }
+        return max;
+    }
+    let mang=[9,3,4,6,2,10];
+    console.log(Min(mang));
+    //cach2;su dung ham findMin
+    let so=[];
+    for (i=0 ; i<100;i++){
+        so[i]=Math.floor(Math.random()*101);
+    }
+    let min=Min(so);
+    let max=Max(so);
+
+    console.log("min=== " +min);
+    console.log("max=== " +max);
+
+</script>
+</body>
+</html>
